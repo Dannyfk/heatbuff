@@ -1,0 +1,160 @@
+body,h1,h2,h3,h4,h5{
+    margin:0;
+    padding:0;
+}
+.coldHand{
+    height:1000px;
+    background-color: #e6bdbd;
+}
+
+.solutionHereScroll{
+    height:1500px;
+    background-color: black;
+}
+
+//SolutionHere section
+.solutionHere {
+    position: relative;
+
+    aside{
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+
+        #solutionHereText1 {
+            visibility: hidden;
+        }
+        #solutionHereText2 {
+            visibility: hidden;
+        }
+    }
+
+    .solutionHereImage{
+        width: 100%;
+    }
+
+    #solutionHereInfrared{
+        position: absolute; 
+        top: 0; 
+        opacity: 0;
+    }
+
+    
+}
+#solutionHereAsideScroll{
+    z-index: 1;
+    visibility: hidden;
+    h2, p{
+        visibility: inherit;
+        color:white;
+    }
+}
+
+.fixedTop {
+    position: fixed; 
+    top: 0; 
+}
+
+//SolutionHere animations
+
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: .17,.67,.83,.67;	
+    -webkit-animation-timing-function: .17,.67,.83,.67;	
+
+	visibility: visible !important;	
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-100%);
+	}
+	/*50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}*/			
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-100%);
+	}
+	/*50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}	*/		
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+    
+}
+.fadeIn {
+    visibility: visible !important;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+//WarmHands section
+.warmHands {
+    height:800px;
+    background-color: black;
+    color:white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    #warmHandsArticle {
+        visibility: hidden;
+    }
+    figure{
+        visibility: hidden;
+    }
+}
+
+//Custom angles section
+
+.customAngles {
+    height:1000px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    figure{
+        img{
+        width:100%;
+        }
+    }
+    article{
+        img{
+            width:50%;
+        }
+    }
+}
+
