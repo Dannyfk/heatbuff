@@ -6,6 +6,14 @@
     <title>Envavo</title>
 </head>
 <body>
+    <nav class="mainNav"></nav>
+    <header class="mainHeader"
+    ></header>
+    <section class="coldHand"></section>
+    <section class="solutionHere"></section>
+    <section class="heatBuff"></section>
+    <section class="warmHands"></section>
+    <section class="customAngles"></section>
     
 </body>
 </html>
