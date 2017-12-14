@@ -1,0 +1,150 @@
+$font: 'Montserrat', sans-serif;
+html, body, div, h1, h2, nav, li, ul {
+    margin: 0;
+    padding: 0;
+}
+nav.mainNav {
+    background-color: grey;
+    div#logo {
+        width: 100px;
+        height: 50px;
+        background-color: black;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+        align-content: center;
+        div#logo {
+        }
+        li {
+            list-style-type: none;
+            align-self: center;
+            justify-self: center;  
+        }
+    }
+}
+header.mainHeader {
+    height: 100vh;
+    background-attachment: fixed;
+    h1 {
+        text-align: center;
+        font-size: 4em;
+        letter-spacing: 1px;
+        margin-top: 0.2em;
+    }
+    div.backgroundImage {
+        background-image: url('../images/heatbuff_front.png');     
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        min-height: 400px;
+        margin-bottom: -50px;
+    }
+    h3 {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    @-webkit-keyframes scroll-inner {
+        from {margin-top: 15%;
+            opacity: 1;}
+        to {margin-top: 80%;
+            opacity: 0;}
+    }
+
+    @keyframes scroll-inner {
+        from {margin-top: 15%;
+            opacity: 1;}
+        to {margin-top: 80%;
+            opacity: 0;}
+    }
+    @-webkit-keyframes scroll-mouse {
+        from {margin-top: 0;}
+        to {margin-top: 15px;}
+    }
+    @keyframes scroll-mouse {
+        from {margin-top: 0;}
+        to {margin-top: 15px;}
+    }
+    div.mouse-container{
+        position:relative;
+        display:block;
+        height:80px;
+    }
+    div.mouse{
+        position:relative;
+        margin:0 auto;
+        display:block;
+        width:30px;
+        height:50px;
+        border: solid 2px #000000;
+        border-radius: 25px;
+        -webkit-animation: scroll-mouse 1.5s; 
+        animation: scroll-mouse 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        span.scroll-down{
+            display:block;
+            width:5px;
+            height:5px;
+            background:#000000;
+            border-radius:50%;
+            margin:15% auto auto auto;
+            -webkit-animation: scroll-inner 1.5s; 
+            animation: scroll-inner 1.5s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function:ease;
+            animation-timing-function:ease
+
+        }
+    }
+}
+section.coldHand {
+    background-color:  #1a1a1a;
+    background-image: url('../images/heatbuff_front.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    min-height: 105vh;
+    h2 {
+        padding-top: 2em;
+        font-size: 3.5em;
+        color: white;
+        padding-left: 4em;
+    }
+    ul {
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+        .fadeInUp {
+             animation: fadeInUp 2s;
+        }
+        li {
+            font-family: $font;
+        }
+        li:nth-child(1) {
+            opacity: 0;
+            padding-left: 4em;
+            font-size: 2.5em;
+            color: white;
+            padding-top: 1.5em;
+        }
+        li:nth-child(2) {
+            opacity: 0;
+            padding-left: 4em;
+            font-size: 2.5em;
+            color: white;
+            padding-top: 1.5em;
+        }
+    }
+
+}
