@@ -1,5 +1,5 @@
 .videoSection {
-  height: 400px; }
+  height: 300px; }
 
 * {
   box-sizing: border-box; }
@@ -7,7 +7,7 @@
 .productPageSection {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 20% 80%; }
+  grid-template-columns: 25% 75%; }
   .productPageSection button {
     margin-bottom: 20px;
     margin-top: 15px; }
@@ -26,8 +26,7 @@
     margin-right: 40px;
     grid-template-columns: 25% 25% 25% 25%; }
     .productPageSection #thumbnails img {
-      max-height: 50px;
-      max-width: 50px;
+      width: 100%;
       opacity: 0.5; }
     .productPageSection #thumbnails img:hover {
       opacity: 1; }
