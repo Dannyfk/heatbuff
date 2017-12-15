@@ -40,7 +40,7 @@
                 <li id="second-par">It is because the problem is not the temperature... <br>But in your bloodflow.</li>
             </ul>
         </section>
-        <section class="solutionHere">
+        <section class="solutionHere scrollable-section" data-section-title="Solution">
         <img class="solutionHereImage" src="image/hands_background.jpg" alt="Solution is here image">
         <aside id="solutionHereAside">
             <h2>The solution is here</h2>
@@ -54,7 +54,7 @@
         <img class="solutionHereImage" id="solutionHereInfrared" src="image/hands_infrared.jpg" alt="Solution is here image">
     </section>
     <section class="solutionHereScroll"></section>
-    <section class="warmHands">
+    <section class="warmHands scrollable-section" data-section-title="Warm Hands">
         <article id="warmHandsArticle">
             <h2>Warm hands, fast</h2>
             <p>Heatbuff warms your hands twice as fast compared to traditional heaters</p>
@@ -63,7 +63,7 @@
             <img src="image/Heatbuff-Infrared-test.gif" alt="Heating gif">
         </figure>
     </section>
-    <section class="customAngles">
+    <section class="customAngles scrollable-section" data-section-title="Customizable angles">
         <figure>
         <img src="image/Custom_angles.png" alt="Angles gif">
         </figure>
@@ -73,7 +73,7 @@
             <img src="image/Heatbuff_Alone_gif.gif" alt="Angles gif">
         </article>
     </section>
-    <script src="js\jquery-3.2.1.min.js"></script>
+    <!--<script src="js\jquery-3.2.1.min.js"></script>-->
     <script src="js/script-Chris.js"></script>
     <script src="js\landingpageScriptDanny.js"></script>
         

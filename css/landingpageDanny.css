@@ -102,6 +102,8 @@ body, h1, h2, h3, h4, h5 {
     visibility: hidden; }
   .warmHands figure {
     visibility: hidden; }
+    .warmHands figure img {
+      width: 100%; }
 
 .customAngles {
   height: 1000px;
