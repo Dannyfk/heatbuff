@@ -146,7 +146,6 @@ body,h1,h2,h3,h4,h5{
 //Custom angles section
 
 .customAngles {
-    height:1000px;
     display: grid;
     grid-template-columns: 50% 50%;
     figure{
@@ -159,5 +158,12 @@ body,h1,h2,h3,h4,h5{
             width:50%;
         }
     }
+}
+
+//Call to action section
+.callToAction {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 

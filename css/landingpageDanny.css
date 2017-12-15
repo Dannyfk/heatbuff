@@ -106,12 +106,16 @@ body, h1, h2, h3, h4, h5 {
       width: 100%; }
 
 .customAngles {
-  height: 1000px;
   display: grid;
   grid-template-columns: 50% 50%; }
   .customAngles figure img {
     width: 100%; }
   .customAngles article img {
     width: 50%; }
+
+.callToAction {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=landingpageDanny.css.map */

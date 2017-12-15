@@ -6,22 +6,16 @@
         <link rel="stylesheet" href="css/Landing-Page-Chris.css">
         <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
-        
+        <link rel="stylesheet" type="text/css" href="css/landingpageDanny.css">
+        <link rel="stylesheet" type="text/css" href="css/includeStyle.css">
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/jquery.section-scroll.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/landingpageDanny.css">
         <title>Envavo</title>
     </head>
     <body>
-        <nav class="mainNav">
-            <ul>
-                <div id="logo"></div>
-                <li>HeatBuff</li>
-                <li>Learn More</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <?php
+            include "includes/nav.inc.php";
+        ?>
         <header class="mainHeader scrollable-section" data-section-title="HeatBuff"
                 >
             <h1>Heatbuff</h1>
@@ -73,6 +67,14 @@
             <img src="image/Heatbuff_Alone_gif.gif" alt="Angles gif">
         </article>
     </section>
+    <section class="callToAction">
+        <h2>Read more about the product</h2>
+    <a href="productPage.php"><button>Envavo Heatbuff</button></a>
+    </section>
+
+    <?php 
+        include "includes/footer.inc.php";
+    ?>
     <!--<script src="js\jquery-3.2.1.min.js"></script>-->
     <script src="js/script-Chris.js"></script>
     <script src="js\landingpageScriptDanny.js"></script>

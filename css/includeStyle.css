@@ -1,0 +1,33 @@
+html, body, div, h1, h2, nav, li, ul {
+  margin: 0;
+  padding: 0; }
+
+nav.mainNav {
+  background-color: grey; }
+  nav.mainNav div#logo {
+    width: 100px;
+    height: 50px;
+    background-color: black; }
+  nav.mainNav ul {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    align-content: center; }
+    nav.mainNav ul li {
+      list-style-type: none;
+      align-self: center;
+      justify-self: center; }
+    nav.mainNav ul li a {
+      text-decoration: none; }
+
+footer {
+  text-align: center;
+  background: rgba(56, 56, 56, 0.9);
+  height: 100px;
+  color: white;
+  padding-left: 1%;
+  padding-top: 30px; }
+  footer p {
+    margin: 0;
+    margin-bottom: 10px; }
+
+/*# sourceMappingURL=includeStyle.css.map */
