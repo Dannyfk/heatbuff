@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Envavo</title>
     <link rel="stylesheet" type="text/css" href="css/includeStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/otherPagesStyle.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
     
