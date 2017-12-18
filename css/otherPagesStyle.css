@@ -51,6 +51,8 @@ body {
     display: none; }
   .productPageSection #productPageDynamicContent {
     clear: both; }
+    .productPageSection #productPageDynamicContent h2 {
+      margin-bottom: 10px; }
   .productPageSection .activeTabButton {
     background-color: white;
     border-top: solid grey 0.5px;

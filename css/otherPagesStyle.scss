@@ -67,6 +67,9 @@ body{
     }
     #productPageDynamicContent{
         clear:both;
+        h2{
+            margin-bottom: 10px;
+        }
     }
     .activeTabButton{
         background-color: white;
