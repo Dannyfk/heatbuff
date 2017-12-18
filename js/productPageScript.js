@@ -91,7 +91,7 @@ $( document ).ready(function() {
     function displayFAQ(){
         $("#productPageDynamicContent").append("<h2>FAQ</h2>");
         var FAQArray = [["Are infrared waves harmful to my skin / fingers?", "No. Every study we have been able to find says it’s completely harmless."],
-                        ["Can I burn my hands on the Heatbuff, like on every other infrared heater?", "No. The product is fully touchable while in us"],
+                        ["Can I burn my hands on the Heatbuff, like on every other infrared heater?", "No. The product is fully touchable while in use"],
                         ["How do you make sure both of my hands are warm?", "We do this by using a customizable angle on the right “head”. It turns, so no matter how you sit, your hands will be warm."],
                         ["Will the Heatbuff come with adapters for US/EU?", "Yes. We will include adapters for your specific country"],
                         ["How many watts does the Heatbuff use?","We expect 50 watts"],

@@ -56,7 +56,7 @@ var windowHeight = 0;
             $("#solutionHereAsideScroll").addClass("fadeIn");
         }
         //remove fixed top when reaching next section
-        if(scrollLocation >= warmHandsSection-(windowWidth*0.211)){
+        if(scrollLocation >= warmHandsSection-(windowWidth*0.311)){
             $(".solutionHere").addClass("fadeOut");
             $(".solutionHere").removeClass("fadeIn");
         }
