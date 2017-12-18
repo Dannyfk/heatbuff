@@ -8,6 +8,9 @@ nav.mainNav {
     width: 100px;
     height: 50px;
     background-color: black; }
+    nav.mainNav div#logo img {
+      width: 100%;
+      height: 100%; }
   nav.mainNav ul {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
@@ -17,7 +20,14 @@ nav.mainNav {
       align-self: center;
       justify-self: center; }
     nav.mainNav ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
+    nav.mainNav ul li a:hover {
+      color: blue; }
+    nav.mainNav ul :nth-child(3) a {
+      color: orange; }
+    nav.mainNav ul :nth-child(3) a:hover {
+      color: #ed652f; }
 
 footer {
   text-align: center;

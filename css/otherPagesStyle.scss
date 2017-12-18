@@ -1,4 +1,15 @@
+$envavoOrange: #ed652f;
+$headingFont: 'Montserrat', sans-serif;
+$textFont: 'Lato', sans-serif;
+body{
+    font-family: $textFont;
+    h1, h2, h3, h4, h5, h6{
+        font-family: $headingFont;
+    }
+}
 .videoSection {
+    margin-left: 10%;
+    margin-right: 10%;
     height:300px;
 }
 
@@ -7,15 +18,41 @@
 
 
 .productPageSection{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
     box-sizing:border-box;
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
+    h2{
+        margin-top: 15px; 
+        color: $envavoOrange;
+    }
+    #price{
+        color: orange;
+        font-size: 18px;
+    }
     button{
         margin-bottom: 20px;
         margin-top: 15px;
     }
+    .tabButton{
+        border:none;
+        height: 40px;
+        padding:10px;
+        border-bottom:solid grey 0.5px;
+        margin-left:0px;
+        margin-right:0px;
+        float: left;
+        outline:none;
+        background-color: grey;
+        color:white;
+    }
     ul {
         list-style-position: inside;
+        li{
+            margin-bottom: 5px;
+        }
      }
      .slideshow-container {
         width:100%;
@@ -27,6 +64,27 @@
       
       .mySlides {
         display: none;
+    }
+    #productPageDynamicContent{
+        clear:both;
+        h2{
+            margin-bottom: 10px;
+        }
+    }
+    .activeTabButton{
+        background-color: white;
+        border-top:solid grey 0.5px;
+        border-left:solid grey 0.5px;
+        border-right:solid grey 0.5px;
+        color:black;
+        
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding:5px;
     }
     #thumbnails{
         display: grid;
@@ -40,6 +98,13 @@
         img:hover{
             opacity:1;
         }
+    }
+    #saleButton{
+        color:white;
+        background-color: $envavoOrange;
+        border:none;
+        padding:10px;
+        font-size: 20px;
     }
     .fade {
         -webkit-animation-name: fade;
@@ -58,3 +123,5 @@
         to {opacity: 1}
       }
 }
+
+//contactpage

@@ -1,1 +1,144 @@
-body,div,h1,h2,html,li,nav,ul{margin:0;padding:0;font-family:"Montserrat", sans-serif}nav.mainNav{background-color:grey}nav.mainNav ul{display:grid;grid-template-columns:3fr 1fr 1fr 1fr 1fr;-ms-flex-line-pack:center;align-content:center}nav.mainNav ul li{list-style-type:none;-ms-flex-item-align:center;align-self:center;justify-self:center}nav.mainNav ul li#logo{width:100px;height:50px;background-color:black;justify-self:flex-start}header.mainHeader{height:100vh;background-attachment:fixed}header.mainHeader h1{text-align:center;font-size:4em;letter-spacing:1px;margin-top:0.5em}header.mainHeader div.backgroundImage{background-image:url("../images/heatbuff_front.png");background-position:center;background-repeat:no-repeat;background-size:80%;min-height:400px;margin-bottom:-50px}header.mainHeader h3{text-align:center;font-size:2.5em;padding:1em 0}@-webkit-keyframes scroll-inner{0%{margin-top:15%;opacity:1}to{margin-top:80%;opacity:0}}@keyframes scroll-inner{0%{margin-top:15%;opacity:1}to{margin-top:80%;opacity:0}}@-webkit-keyframes scroll-mouse{0%{margin-top:0}to{margin-top:15px}}@keyframes scroll-mouse{0%{margin-top:0}to{margin-top:15px}}@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}header.mainHeader .fadeOutScroll{-webkit-animation:fadeOut 1s;animation:fadeOut 1s}header.mainHeader div.mouse-container{position:relative;display:block;height:80px}header.mainHeader div.mouse{position:relative;margin:0 auto;display:block;width:30px;height:50px;border:solid 2px #000000;border-radius:25px;-webkit-animation:scroll-mouse 1.5s;animation:scroll-mouse 1.5s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}header.mainHeader div.mouse span.scroll-down{display:block;width:5px;height:5px;background:#000000;border-radius:50%;margin:15% auto auto auto;-webkit-animation:scroll-inner 1.5s;animation:scroll-inner 1.5s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:ease;animation-timing-function:ease}section.coldHand{background-color:#1a1a1a;background-image:url(../images/Heatbuff-close-up2-PNG.png);background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:100%;height:105vh}section.coldHand h2{padding-top:2em;font-size:3.5em;color:white;padding-left:4em}@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0, 100%, 0);transform:translate3d(0, 100%, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0, 100%, 0);transform:translate3d(0, 100%, 0)}to{opacity:1;-webkit-transform:none;transform:none}}section.coldHand ul .fadeInUp{-webkit-animation:fadeInUp 2s;animation:fadeInUp 2s}section.coldHand ul li{font-family:"Montserrat", sans-serif}section.coldHand ul li:first-child{opacity:0;padding-left:4em;font-size:2.5em;color:white;padding-top:1.5em}section.coldHand ul li:nth-child(2){opacity:0;padding-left:4em;font-size:2.5em;color:white;padding-top:2.5em}
+html, body, div, nav, li, ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; }
+
+nav.mainNav {
+  background-color: grey; }
+  nav.mainNav ul {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    align-content: center; }
+    nav.mainNav ul li {
+      list-style-type: none;
+      align-self: center;
+      justify-self: center; }
+    nav.mainNav ul li#logo {
+      width: 100px;
+      height: 50px;
+      background-color: black;
+      justify-self: flex-start; }
+
+header.mainHeader {
+  height: 100vh;
+  background-attachment: fixed; }
+  header.mainHeader h1 {
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 1px;
+    margin-top: 0.5em; }
+  header.mainHeader div.backgroundImage {
+    background-image: url("../images/heatbuff_front.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    min-height: 400px;
+    margin-bottom: -50px; }
+  header.mainHeader h3 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 1em 0; }
+@-webkit-keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+    opacity: 1; }
+  to {
+    margin-top: 80%;
+    opacity: 0; } }
+@keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+    opacity: 1; }
+  to {
+    margin-top: 80%;
+    opacity: 0; } }
+@-webkit-keyframes scroll-mouse {
+  from {
+    margin-top: 0; }
+  to {
+    margin-top: 15px; } }
+@keyframes scroll-mouse {
+  from {
+    margin-top: 0; }
+  to {
+    margin-top: 15px; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+  header.mainHeader .fadeOutScroll {
+    animation: fadeOut 1s; }
+  header.mainHeader div.mouse-container {
+    position: relative;
+    display: block;
+    height: 80px; }
+  header.mainHeader div.mouse {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: solid 2px #000000;
+    border-radius: 25px;
+    -webkit-animation: scroll-mouse 1.5s;
+    animation: scroll-mouse 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+    header.mainHeader div.mouse span.scroll-down {
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: #000000;
+      border-radius: 50%;
+      margin: 15% auto auto auto;
+      -webkit-animation: scroll-inner 1.5s;
+      animation: scroll-inner 1.5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease; }
+
+section.coldHand {
+  background-color: #1a1a1a;
+  background-image: url("../images/heatbuff_front.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  height: 105vh; }
+  section.coldHand h2 {
+    padding-top: 2em;
+    font-size: 3.5em;
+    color: white;
+    padding-left: 4em; }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+  section.coldHand ul .fadeInUp {
+    animation: fadeInUp 2s; }
+  section.coldHand ul li {
+    font-family: "Montserrat", sans-serif; }
+  section.coldHand ul li:nth-child(1) {
+    opacity: 0;
+    padding-left: 4em;
+    font-size: 2.5em;
+    color: white;
+    padding-top: 1.5em; }
+  section.coldHand ul li:nth-child(2) {
+    opacity: 0;
+    padding-left: 4em;
+    font-size: 2.5em;
+    color: white;
+    padding-top: 2.5em; }
+
+/*# sourceMappingURL=Landing-Page-Chris.css.map */
