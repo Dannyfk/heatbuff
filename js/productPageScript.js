@@ -35,6 +35,7 @@ $( document ).ready(function() {
     //function to display content based on input from buttonclick
     function displayContent(name){
        $("#productPageDynamicContent").empty();
+       $(".tabButton").removeClass("activeTabButton");
         switch(name) {
             case "features":
                 displayFeatures();
@@ -50,6 +51,7 @@ $( document ).ready(function() {
 
     //create an array of features and append it to the content article
     function displayFeatures(){
+        $("#productFeatures").addClass("activeTabButton");
         $("#productPageDynamicContent").append("<h2>Features</h2>");
         var featureArray = ["Infrared no-burn technology (the product remains cold while your hands are warm!)", 
                             "Increased natural bloodflow", 
@@ -66,6 +68,7 @@ $( document ).ready(function() {
 
     //create an array of specs and append it to the content article
     function displaySpecs(){
+        $("#productSpecs").addClass("activeTabButton");
         $("#productPageDynamicContent").append("<h2>Tech specs</h2>");
         var specsArray = [["Weight","0.7kg"], 
                           ["Size", "30cm x 10cm x 8cm"],
@@ -89,6 +92,7 @@ $( document ).ready(function() {
 
     //create an array of FAQs and append it to the content article
     function displayFAQ(){
+        $("#productFAQ").addClass("activeTabButton");
         $("#productPageDynamicContent").append("<h2>FAQ</h2>");
         var FAQArray = [["Are infrared waves harmful to my skin / fingers?", "No. Every study we have been able to find says it’s completely harmless."],
                         ["Can I burn my hands on the Heatbuff, like on every other infrared heater?", "No. The product is fully touchable while in use"],

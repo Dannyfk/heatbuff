@@ -37,9 +37,9 @@
         <section class="productPageContent">
         <h2>Envavo Heatbuff</h2>
         <p id="price">$139.00</p>
-            <button id="productFeatures">Heatbuff Features</button>
-            <button id="productSpecs">Tech specs</button>
-            <button id="productFAQ">FAQ</button>
+            <button class="tabButton activeTabButton" id="productFeatures">Heatbuff Features</button>
+            <button class="tabButton" id="productSpecs">Tech specs</button>
+            <button class="tabButton" id="productFAQ">FAQ</button>
             <article id="productPageDynamicContent">
                 
             </article>

@@ -36,6 +36,18 @@ body{
         margin-bottom: 20px;
         margin-top: 15px;
     }
+    .tabButton{
+        border:none;
+        height: 40px;
+        padding:10px;
+        border-bottom:solid grey 0.5px;
+        margin-left:0px;
+        margin-right:0px;
+        float: left;
+        outline:none;
+        background-color: grey;
+        color:white;
+    }
     ul {
         list-style-position: inside;
         li{
@@ -52,6 +64,17 @@ body{
       
       .mySlides {
         display: none;
+    }
+    #productPageDynamicContent{
+        clear:both;
+    }
+    .activeTabButton{
+        background-color: white;
+        border-top:solid grey 0.5px;
+        border-left:solid grey 0.5px;
+        border-right:solid grey 0.5px;
+        color:black;
+        
     }
     table, th, td {
         border: 1px solid black;
