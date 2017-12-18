@@ -1,7 +1,8 @@
 body {
-  font-family: "Lato", sans-serif; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-family: "Montserrat", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif; }
 
 .videoSection {
   margin-left: 10%;
@@ -9,12 +10,14 @@ body {
   height: 300px; }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .productPageSection {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 30% 70%; }
@@ -85,15 +88,15 @@ body {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s; }
+
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
   to {
     opacity: 1; } }
+
 @keyframes fade {
   from {
     opacity: .4; }
   to {
     opacity: 1; } }
-
-/*# sourceMappingURL=otherPagesStyle.css.map */
