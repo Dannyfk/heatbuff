@@ -2,24 +2,24 @@ $font: 'Montserrat', sans-serif;
 html, body, div, h1, h2, nav, li, ul {
     margin: 0;
     padding: 0;
+    font-family: $font;
 }
 nav.mainNav {
     background-color: grey;
-    div#logo {
-        width: 100px;
-        height: 50px;
-        background-color: black;
-    }
     ul {
         display: grid;
         grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
         align-content: center;
-        div#logo {
-        }
-        li {
+        li{
             list-style-type: none;
             align-self: center;
             justify-self: center;  
+        }
+        li#logo {
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            justify-self: flex-start;  
         }
     }
 }
@@ -30,7 +30,7 @@ header.mainHeader {
         text-align: center;
         font-size: 4em;
         letter-spacing: 1px;
-        margin-top: 0.2em;
+        margin-top: 0.5em;
     }
     div.backgroundImage {
         background-image: url('../images/heatbuff_front.png');     
@@ -43,6 +43,7 @@ header.mainHeader {
     h3 {
         text-align: center;
         font-size: 2.5em;
+        padding: 1em 0;
     }
     @-webkit-keyframes scroll-inner {
         from {margin-top: 15%;
@@ -64,6 +65,17 @@ header.mainHeader {
     @keyframes scroll-mouse {
         from {margin-top: 0;}
         to {margin-top: 15px;}
+    }
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    .fadeOutScroll {
+        animation: fadeOut 1s;
     }
     div.mouse-container{
         position:relative;
@@ -106,7 +118,7 @@ section.coldHand {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
-    min-height: 105vh;
+    height: 105vh;
     h2 {
         padding-top: 2em;
         font-size: 3.5em;
@@ -126,7 +138,7 @@ section.coldHand {
             }
         }
         .fadeInUp {
-             animation: fadeInUp 2s;
+            animation: fadeInUp 2s;
         }
         li {
             font-family: $font;
@@ -143,7 +155,7 @@ section.coldHand {
             padding-left: 4em;
             font-size: 2.5em;
             color: white;
-            padding-top: 1.5em;
+            padding-top: 2.5em;
         }
     }
 

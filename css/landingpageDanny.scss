@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5{
+body,h1,h2,h3,h4,h5, figure{
     margin:0;
     padding:0;
 }
@@ -8,7 +8,7 @@ body,h1,h2,h3,h4,h5{
 }
 
 .solutionHereScroll{
-    height:1500px;
+    height:800px;
     background-color: black;
 }
 
@@ -18,10 +18,12 @@ body,h1,h2,h3,h4,h5{
 
     aside{
         position: absolute;
-        top: 50%;
-        left: 80%;
+        top: 45%;
+        left: 75%;
         transform: translate(-50%, -50%);
-
+        h2 {
+            font-size: 2.2em;
+        }
         #solutionHereText1 {
             visibility: hidden;
         }
@@ -40,7 +42,7 @@ body,h1,h2,h3,h4,h5{
         opacity: 0;
     }
 
-    
+
 }
 #solutionHereAsideScroll{
     z-index: 1;
@@ -59,65 +61,65 @@ body,h1,h2,h3,h4,h5{
 //SolutionHere animations
 
 .slideRight{
-	animation-name: slideRight;
-	-webkit-animation-name: slideRight;	
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;	
 
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
+    animation-duration: 1s;	
+    -webkit-animation-duration: 1s;
 
-	animation-timing-function: .17,.67,.83,.67;	
+    animation-timing-function: .17,.67,.83,.67;	
     -webkit-animation-timing-function: .17,.67,.83,.67;	
 
-	visibility: visible !important;	
+    visibility: visible !important;	
 }
 
 @keyframes slideRight {
-	0% {
-		transform: translateX(-100%);
-	}
-	/*50%{
-		transform: translateX(8%);
-	}
-	65%{
-		transform: translateX(-4%);
-	}
-	80%{
-		transform: translateX(4%);
-	}
-	95%{
-		transform: translateX(-2%);
-	}*/			
-	100% {
-		transform: translateX(0%);
-	}	
+    0% {
+        transform: translateX(-100%);
+    }
+    /*50%{
+    transform: translateX(8%);
+}
+    65%{
+    transform: translateX(-4%);
+}
+    80%{
+    transform: translateX(4%);
+}
+    95%{
+    transform: translateX(-2%);
+}*/			
+    100% {
+        transform: translateX(0%);
+    }	
 }
 
 @-webkit-keyframes slideRight {
-	0% {
-		-webkit-transform: translateX(-100%);
-	}
-	/*50%{
-		-webkit-transform: translateX(8%);
-	}
-	65%{
-		-webkit-transform: translateX(-4%);
-	}
-	80%{
-		-webkit-transform: translateX(4%);
-	}
-	95%{
-		-webkit-transform: translateX(-2%);
-	}	*/		
-	100% {
-		-webkit-transform: translateX(0%);
-	}
+    0% {
+        -webkit-transform: translateX(-100%);
+    }
+    /*50%{
+    -webkit-transform: translateX(8%);
+}
+    65%{
+    -webkit-transform: translateX(-4%);
+}
+    80%{
+    -webkit-transform: translateX(4%);
+}
+    95%{
+    -webkit-transform: translateX(-2%);
+}	*/		
+    100% {
+        -webkit-transform: translateX(0%);
+    }
 }
 
 .fadeOut {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s linear 300ms, opacity 300ms;
-    
+
 }
 .fadeIn {
     visibility: visible !important;
@@ -127,35 +129,68 @@ body,h1,h2,h3,h4,h5{
 
 //WarmHands section
 .warmHands {
-    height:800px;
+    height:600px;
     background-color: black;
     color:white;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    h2 {
+        font-size: 2.2em;
+    }
     #warmHandsArticle {
-        visibility: hidden;
+        /*visibility: hidden;*/
+        justify-self: center;
+        align-self: center;
     }
     figure{
-        visibility: hidden;
+        /*visibility: hidden;*/
+        justify-self: center;
+        justifty-self: end;
+         align-self: center;
+        /*visibility: hidden;
         img{
             width:100%;
-        }
+        }*/
     }
 }
 
 //Custom angles section
 
 .customAngles {
+    height:600px;
+    padding-bottom: 5em;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     figure{
+        align-self: center;
         img{
-        width:100%;
+            width:80%;
         }
     }
     article{
-        img{
-            width:50%;
+        text-align: center;
+        align-self: center;
+        h2 {
+            font-size: 2.2em;
+        }
+    }
+}
+section.easySetup {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    article {
+        text-align: center;
+        align-self: center;
+        h2 {
+            font-size: 2.2em; 
+        }
+    }
+    figure {
+        align-self: center;
+        img {
+            width: 100%;
         }
     }
 }
