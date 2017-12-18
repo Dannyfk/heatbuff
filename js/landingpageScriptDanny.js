@@ -56,13 +56,13 @@ var windowWidth = 0;
         //remove fixed top when reaching next section
         if(scrollLocation >= warmHandsSection+400){
             $(".solutionHere").removeClass("fixedTop");
-            $("#warmHandsArticle").addClass("slideRight");
-            $("#warmHandsFigure").addClass("slideRight");
+            //$("#warmHandsArticle").addClass("slideRight");
+            //$("#warmHandsFigure").addClass("slideRight");
         }
         //animate warmHandsSection content
-        if(scrollLocation >= warmHandsSection+600){
+       /* if(scrollLocation >= warmHandsSection+600){
             $("#warmHandsArticle").addClass("slideRight");
             $("#warmHandsFigure").addClass("slideRight");
-        }
+        }*/
     });
 });
