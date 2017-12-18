@@ -1,34 +1,36 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
-$("#productFeatures").click(function(){
-    displayContent("features");
-});
-$("#productSpecs").click(function(){
-    displayContent("specs");
-});
-$("#productFAQ").click(function(){
-    displayContent("FAQ");
-});
-    displayFeatures();
+    // adding click event handlers for the buttons
+    $("#productFeatures").click(function(){
+        displayContent("features");
+    });
+    $("#productSpecs").click(function(){
+        displayContent("specs");
+    });
+    $("#productFAQ").click(function(){
+        displayContent("FAQ");
+    });
+        displayFeatures();
 
-$("#thumbnail1").click(function(){
-    showThumbnailSlides(1);
-});
-$("#thumbnail2").click(function(){
-    showThumbnailSlides(2);
-});
-$("#thumbnail3").click(function(){
-    showThumbnailSlides(3);
-});
-$("#thumbnail4").click(function(){
-    showThumbnailSlides(4);
-});
-$("#thumbnail5").click(function(){
-    showThumbnailSlides(5);
-});
-$("#thumbnail6").click(function(){
-    showThumbnailSlides(6);
-});
+    // adding click event handlers for the thumbnail pictures
+    $("#thumbnail1").click(function(){
+        showThumbnailSlides(1);
+    });
+    $("#thumbnail2").click(function(){
+        showThumbnailSlides(2);
+    });
+    $("#thumbnail3").click(function(){
+        showThumbnailSlides(3);
+    });
+    $("#thumbnail4").click(function(){
+        showThumbnailSlides(4);
+    });
+    $("#thumbnail5").click(function(){
+        showThumbnailSlides(5);
+    });
+    $("#thumbnail6").click(function(){
+        showThumbnailSlides(6);
+    });
 });
     //function to display content based on input from buttonclick
     function displayContent(name){
@@ -123,9 +125,10 @@ function showThumbnailSlides(n) {
     showSlides(slideIndex = n);
   }
 
+//display slide
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = $(".mySlides");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

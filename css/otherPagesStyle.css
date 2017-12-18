@@ -1,18 +1,31 @@
 .videoSection {
+  margin-left: 10%;
+  margin-right: 10%;
   height: 300px; }
 
 * {
   box-sizing: border-box; }
 
 .productPageSection {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 25% 75%; }
+  grid-template-columns: 30% 70%; }
+  .productPageSection h2 {
+    margin-top: 15px;
+    color: #ed652f; }
+  .productPageSection #price {
+    color: orange;
+    font-size: 18px; }
   .productPageSection button {
     margin-bottom: 20px;
     margin-top: 15px; }
   .productPageSection ul {
     list-style-position: inside; }
+    .productPageSection ul li {
+      margin-bottom: 5px; }
   .productPageSection .slideshow-container {
     width: 100%;
     position: relative; }
@@ -20,6 +33,11 @@
       width: 100%; }
   .productPageSection .mySlides {
     display: none; }
+  .productPageSection table, .productPageSection th, .productPageSection td {
+    border: 1px solid black;
+    border-collapse: collapse; }
+  .productPageSection th, .productPageSection td {
+    padding: 5px; }
   .productPageSection #thumbnails {
     display: grid;
     margin-left: 40px;
@@ -30,6 +48,12 @@
       opacity: 0.5; }
     .productPageSection #thumbnails img:hover {
       opacity: 1; }
+  .productPageSection #saleButton {
+    color: white;
+    background-color: #ed652f;
+    border: none;
+    padding: 10px;
+    font-size: 20px; }
   .productPageSection .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
