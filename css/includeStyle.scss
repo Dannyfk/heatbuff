@@ -1,0 +1,41 @@
+html, body, div, h1, h2, nav, li, ul {
+    margin: 0;
+    padding: 0;
+}
+nav.mainNav {
+    background-color: grey;
+    div#logo {
+        width: 100px;
+        height: 50px;
+        background-color: black;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+        align-content: center;
+        div#logo {
+        }
+        li {
+            list-style-type: none;
+            align-self: center;
+            justify-self: center;  
+        }
+        li a {
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    background: rgba(56, 56, 56, 0.9);
+    height:100px;
+    color:white;
+    padding-left: 1%;
+    padding-top: 30px;
+    p {
+        margin:0;
+        margin-bottom: 10px;
+    }
+}
+

@@ -12,12 +12,12 @@ var windowWidth = 0;
         var warmHandsSection = $(".warmHands").offset().top;
 
         //when solutionHere comes into the window animate the text in
-        if (scrollLocation >= solutionHereSection-200) {
+        if (scrollLocation >= solutionHereSection-(windowWidth*0.105)) {
                 $("#solutionHereText1").addClass("slideRight");
                 $("#solutionHereText2").addClass("slideRight");
             }
         //when solutionHere reaches top of window fix it to top
-        if(scrollLocation >= solutionHereSection && scrollLocation< solutionHereSection+1200){
+        if(scrollLocation >= solutionHereSection && scrollLocation< solutionHereSection+(windowWidth*0.631)){
             $(".solutionHere").addClass("fixedTop");
         }
         //if scrolling back up remove fix top
@@ -25,12 +25,12 @@ var windowWidth = 0;
             $(".solutionHere").removeClass("fixedTop");
         }
         //Infrared picture opacity and tempnumber reset
-        if(scrollLocation < solutionHereSectionStart+500){
+        if(scrollLocation < solutionHereSectionStart+(windowWidth*0.263)){
             $('#solutionHereInfrared').css('opacity', 0);
             tempNumber = 0;
         }
         //change infrared image opacity as user scrolls
-        if(scrollLocation >= solutionHereSectionStart+500){
+        if(scrollLocation >= solutionHereSectionStart+(windowWidth*0.263)){
             if(scrollLocation > tempScrollLocation){
                 tempNumber ++;
             }
@@ -42,25 +42,29 @@ var windowWidth = 0;
             $('#solutionHereInfrared').css('opacity', number);
         }
         //fade in first image text, fade out last image text
-        if(scrollLocation > solutionHereSectionStart+500 && scrollLocation < solutionHereSectionStart+650){
+        if(scrollLocation > solutionHereSectionStart+(windowWidth*0.263) && scrollLocation < solutionHereSectionStart+(windowWidth*0.342)){
             $("#solutionHereAside").addClass("fadeIn");
             $("#solutionHereAsideScroll").addClass("fadeOut");
             $("#solutionHereAsideScroll").removeClass("fadeIn");
         }
         //fade in last image text, fade out first image text
-        if(scrollLocation >= solutionHereSectionStart+700){
+        if(scrollLocation >= solutionHereSectionStart+(windowWidth*0.368)){
             $("#solutionHereAside").removeClass("fadeIn")
             $("#solutionHereAside").addClass("fadeOut");
             $("#solutionHereAsideScroll").addClass("fadeIn");
         }
         //remove fixed top when reaching next section
-        if(scrollLocation >= warmHandsSection+400){
+        if(scrollLocation >= warmHandsSection+(windowWidth*0.211)){
             $(".solutionHere").removeClass("fixedTop");
             //$("#warmHandsArticle").addClass("slideRight");
             //$("#warmHandsFigure").addClass("slideRight");
         }
         //animate warmHandsSection content
+<<<<<<< HEAD
        /* if(scrollLocation >= warmHandsSection+600){
+=======
+        if(scrollLocation >= warmHandsSection+(windowWidth*0.315)){
+>>>>>>> 1511c34405c81960d6c4d5b0156a3a57d8ef6673
             $("#warmHandsArticle").addClass("slideRight");
             $("#warmHandsFigure").addClass("slideRight");
         }*/

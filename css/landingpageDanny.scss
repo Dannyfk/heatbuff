@@ -147,6 +147,10 @@ body,h1,h2,h3,h4,h5, figure{
         justify-self: center;
         justifty-self: end;
          align-self: center;
+        /*visibility: hidden;
+        img{
+            width:100%;
+        }*/
     }
 }
 
@@ -189,5 +193,12 @@ section.easySetup {
             width: 100%;
         }
     }
+}
+
+//Call to action section
+.callToAction {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 

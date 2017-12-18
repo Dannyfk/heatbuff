@@ -122,7 +122,11 @@ body, h1, h2, h3, h4, h5, figure {
     justify-self: center;
     justifty-self: end;
     -ms-flex-item-align: center;
-    align-self: center; }
+    align-self: center;
+    /*visibility: hidden;
+        img{
+            width:100%;
+        }*/ }
 
 .customAngles {
   height: 600px;
@@ -157,3 +161,8 @@ section.easySetup {
     align-self: center; }
     section.easySetup figure img {
       width: 100%; }
+
+.callToAction {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
