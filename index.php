@@ -10,11 +10,10 @@
         <meta name="description" content="description here">
         <meta name="keywords" content="keywords,here">
         <link rel="stylesheet" href="css/Landing-Page-Chris.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:600" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/landingpageDanny.css">
         <link rel="stylesheet" type="text/css" href="css/includeStyle.css">
         <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/jquery.section-scroll.js"></script>
         <title>Envavo</title>
     </head>
     <body>
@@ -42,11 +41,11 @@
             <img class="solutionHereImage" src="image/hands_background.jpg" alt="Solution is here image">
             <aside id="solutionHereAside">
                 <h2>The solution is here</h2>
-                <p id="solutionHereText1">Unlike the other heaters, we use infrared waves technolegy</p>
+                <p id="solutionHereText1">Unlike the other heaters, we use infrared waves technoligy</p>
                 <p id="solutionHereText2">Heatbuff naturally increases your bloodflow fast and your body temperature is back to normal</p>
             </aside>
             <aside id="solutionHereAsideScroll">
-                <h2>Heatbuff - warm your hands, but nothing else</h2>
+                <h2>Heatbuff - warms your hands, but nothing else</h2>
                 <p>Infrared waves warms up only your body. You don't have to worry about your equipment</p>
             </aside>
             <img class="solutionHereImage" id="solutionHereInfrared" src="image/hands_infrared.jpg" alt="Solution is here image">
@@ -90,6 +89,5 @@
     ?>
     <script src="js/script-Chris.js"></script>
     <script src="js/landingpageScriptDanny.js"></script>
-    <script src="js/jquery.section-scroll.js"></script>
     </body>
 </html>

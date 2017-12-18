@@ -4,9 +4,11 @@ var solutionHereSectionStart = $(".solutionHere").offset().top;
 var tempScrollLocation = 0;
 var tempNumber = 0
 var windowWidth = 0;
+var windowHeight = 0;
     $(window).scroll(function() {
         windowWidth = $(window).width();
-        console.log(windowWidth);
+        windowHeight = $(window).height();
+        $(".solutionHereImage").css("height",windowHeight);
         var scrollLocation = $(window).scrollTop();
         var solutionHereSection = $(".solutionHere").offset().top;
         var warmHandsSection = $(".warmHands").offset().top;
@@ -54,19 +56,18 @@ var windowWidth = 0;
             $("#solutionHereAsideScroll").addClass("fadeIn");
         }
         //remove fixed top when reaching next section
-        if(scrollLocation >= warmHandsSection+(windowWidth*0.211)){
-            $(".solutionHere").removeClass("fixedTop");
-            //$("#warmHandsArticle").addClass("slideRight");
-            //$("#warmHandsFigure").addClass("slideRight");
+        if(scrollLocation >= warmHandsSection-(windowWidth*0.211)){
+            $(".solutionHere").addClass("fadeOut");
+            $(".solutionHere").removeClass("fadeIn");
+        }
+        else{
+            $(".solutionHere").addClass("fadeIn");
+            $(".solutionHere").removeClass("fadeOut");
         }
         //animate warmHandsSection content
-<<<<<<< HEAD
-       /* if(scrollLocation >= warmHandsSection+600){
-=======
         if(scrollLocation >= warmHandsSection+(windowWidth*0.315)){
->>>>>>> 1511c34405c81960d6c4d5b0156a3a57d8ef6673
             $("#warmHandsArticle").addClass("slideRight");
             $("#warmHandsFigure").addClass("slideRight");
-        }*/
+        }
     });
 });

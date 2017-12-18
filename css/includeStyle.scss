@@ -8,6 +8,10 @@ nav.mainNav {
         width: 100px;
         height: 50px;
         background-color: black;
+        img{
+            width:100%;
+            height:100%;
+        }
     }
     ul {
         display: grid;
