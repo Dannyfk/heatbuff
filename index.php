@@ -62,7 +62,7 @@
         </section>
         <section class="customAngles">
             <figure>
-                <img src="image/Heatbuff_Alone_gif.gif" alt="Angles gif">
+                <img class="gifStyling" src="image/Heatbuff_Alone_gif.gif" alt="Angles gif">
             </figure>
             <article id="customAnglesText">
                 <h2>Custom angles</h2>
@@ -75,7 +75,7 @@
                 <p>Place behind your keyboard, plug it in and start feeling warmness</p>
             </article>
             <figure>
-                <img src="image/Custom_angles.png" alt="Angles gif">
+                <img class="gifStyling" src="image/Custom_angles.png" alt="Angles gif">
             </figure>
         </section>
         <script src="js/jquery-3.2.1.min.js"></script>

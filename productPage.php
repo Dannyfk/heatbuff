@@ -3,7 +3,7 @@
     include "includes/nav.inc.php";
 ?>
     <section class="videoSection">
-        <p>Insert video here</p>
+        <video src="movie/heatbuffMovie.mp4" type="video/mp4" controls>
     </section>
     <section class="productPageSection">
         <aside class="productImages slideshow-container">
@@ -44,7 +44,7 @@
                 
             </article>
             <hr>
-            <p>Are you a company looking for a bundle deal? Contact us on Phone: +45 28 40 60 51  or  Email: hi(at)envavo.com and let us make a deal together</p>
+            <p>Are you a company looking for a bundle deal? Contact us on Phone: +45 28 40 60 51  or<br>  Email: hi(at)envavo.com and let us make a deal together</p>
             <a href="https://envavo.com/shop/"><button id="saleButton">Get your Heatbuff</button></a>
         </section>
     </section>

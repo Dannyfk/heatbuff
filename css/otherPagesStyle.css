@@ -5,9 +5,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu", sans-serif; }
 
 .videoSection {
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 300px; }
+  margin: 10px 10% 50px 10%; }
+  .videoSection video {
+    width: 100%; }
 
 * {
   box-sizing: border-box; }
