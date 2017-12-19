@@ -10,14 +10,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 300px; }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .productPageSection {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 20px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 30% 70%; }
@@ -89,15 +87,64 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s; }
-
 @-webkit-keyframes fade {
   from {
     opacity: .4; }
   to {
     opacity: 1; } }
-
 @keyframes fade {
   from {
     opacity: .4; }
   to {
     opacity: 1; } }
+.contactSection {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-template-areas: ". profile1 . profile2 ." ". contact address media ."; }
+  .contactSection h2 {
+    color: #ed652f; }
+
+.profile {
+  margin-bottom: 50px; }
+
+.profile1 {
+  grid-area: profile1;
+  text-align: center; }
+
+.profile2 {
+  grid-area: profile2;
+  text-align: center; }
+
+.contact {
+  grid-area: contact; }
+
+.address {
+  grid-area: address; }
+
+.media {
+  grid-area: media; }
+
+.aboutSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 10% 20px 10%; }
+  .aboutSection article {
+    padding: 20px; }
+  .aboutSection img {
+    width: 100%; }
+  .aboutSection h2, .aboutSection h4 {
+    color: #ed652f; }
+
+#timeLine {
+  text-align: center;
+  margin: 20px 10% 20px 10%; }
+  #timeLine h2 {
+    color: #ed652f; }
+  #timeLine img {
+    width: 100%; }
+
+/*# sourceMappingURL=otherPagesStyle.css.map */

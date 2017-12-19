@@ -59,15 +59,22 @@ var windowHeight = 0;
         if(scrollLocation >= warmHandsSection-(windowWidth*0.311)){
             $(".solutionHere").addClass("fadeOut");
             $(".solutionHere").removeClass("fadeIn");
+            $("#warmHandsArticle").addClass("slideRight");
+            $("#warmHandsFigure").addClass("slideRight");
         }
         else{
             $(".solutionHere").addClass("fadeIn");
             $(".solutionHere").removeClass("fadeOut");
         }
-        //animate warmHandsSection content
-        if(scrollLocation >= warmHandsSection+(windowWidth*0.315)){
-            $("#warmHandsArticle").addClass("slideRight");
-            $("#warmHandsFigure").addClass("slideRight");
+        //animate custom angles content
+        var customAngles = $(".customAngles").offset().top;
+        if(scrollLocation >= customAngles-(windowWidth*0.330)){
+            $("#customAnglesText").addClass("slideLeft");
+        }
+        //animate easy setup content
+        var customSetup = $(".easySetup").offset().top;
+        if(scrollLocation >= customSetup-(windowWidth*0.340)){
+            $("#easySetupText").addClass("slideRight");
         }
     });
 });

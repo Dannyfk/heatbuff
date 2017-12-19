@@ -9,11 +9,9 @@ nav.mainNav {
   nav.mainNav ul {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-    -ms-flex-line-pack: center;
     align-content: center; }
     nav.mainNav ul li {
       list-style-type: none;
-      -ms-flex-item-align: center;
       align-self: center;
       justify-self: center;
       font-family: "Open Sans", sans-serif; }
@@ -44,3 +42,5 @@ footer {
   footer p {
     margin: 0;
     margin-bottom: 10px; }
+
+/*# sourceMappingURL=includeStyle.css.map */

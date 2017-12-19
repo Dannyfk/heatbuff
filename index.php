@@ -64,13 +64,13 @@
             <figure>
                 <img src="image/Heatbuff_Alone_gif.gif" alt="Angles gif">
             </figure>
-            <article>
+            <article id="customAnglesText">
                 <h2>Custom angles</h2>
                 <p>No matter how you use the computer, you can always use Heatbuff</p>
             </article>
         </section>
         <section class="easySetup">
-            <article>
+            <article id="easySetupText">
                 <h2>Easy Setup</h2>
                 <p>Place behind your keyboard, plug it in and start feeling warmness</p>
             </article>

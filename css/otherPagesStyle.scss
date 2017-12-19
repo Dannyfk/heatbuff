@@ -126,3 +126,66 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 //contactpage
+.contactSection {
+    margin-top:20px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: 
+      ". profile1 . profile2 ."
+      ". contact address media .";
+      h2{
+          color:$envavoOrange;
+      }
+  }
+  .profile{
+      margin-bottom: 50px;
+  }
+.profile1 {
+    grid-area: profile1;
+    text-align: center;
+  }
+.profile2 {
+    grid-area: profile2;
+    text-align: center;
+  }
+.contact {
+    grid-area: contact;
+  }
+.address{
+    grid-area: address;
+  }
+.media {
+    grid-area: media;
+  }
+  
+
+ //about page
+
+.aboutSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:20px 10% 20px 10%;
+    article{
+        padding:20px;
+    }
+    img{
+        width:100%;
+    }
+    h2, h4 {
+        color:$envavoOrange;
+    }
+}
+
+#timeLine{
+    text-align: center;
+    margin:20px 10% 20px 10%;
+    h2{
+        color:$envavoOrange;
+    }
+    img{
+        width:100%;
+    }
+}

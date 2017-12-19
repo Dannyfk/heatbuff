@@ -91,6 +91,37 @@ body,h1,h2,h3,h4,h5, figure{
     }
 }
 
+.slideLeft{
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;	
+
+    animation-duration: 1s;	
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: .17,.67,.83,.67;	
+    -webkit-animation-timing-function: .17,.67,.83,.67;	
+
+    visibility: visible !important;	
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }		
+    100% {
+        transform: translateX(0%);
+    }	
+}
+
+@-webkit-keyframes slideLeft {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
 .fadeOut {
     visibility: hidden;
     opacity: 0;
@@ -105,7 +136,7 @@ body,h1,h2,h3,h4,h5, figure{
 
 //WarmHands section
 .warmHands {
-    height:600px;
+    height:800px;
     background-color: black;
     color:white;
     display: grid;
@@ -174,7 +205,15 @@ section.easySetup {
 //Call to action section
 .callToAction {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    button {
+        margin-top: 20px;
+        color:white;
+        background-color: #ed652f;
+        border:none;
+        padding:10px;
+        font-size: 20px;
+    }
 }
 
