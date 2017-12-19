@@ -50,7 +50,8 @@ body {
   .productPageSection .mySlides {
     display: none; }
   .productPageSection #productPageDynamicContent {
-    clear: both; }
+    clear: both;
+    margin-bottom: 10px; }
     .productPageSection #productPageDynamicContent h2 {
       margin-bottom: 10px; }
   .productPageSection .activeTabButton {
