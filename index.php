@@ -10,7 +10,7 @@
         <meta name="description" content="description here">
         <meta name="keywords" content="keywords,here">
         <link rel="stylesheet" href="css/Landing-Page-Chris.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/landingpageDanny.css">
         <link rel="stylesheet" type="text/css" href="css/includeStyle.css">
         <script src="js/jquery-3.2.1.min.js"></script>
@@ -69,25 +69,25 @@
                 <p>No matter how you use the computer, you can always use Heatbuff</p>
             </article>
         </section>
-    <section class="easySetup">
-        <article>
-            <h2>Easy Setup</h2>
-            <p>Place behind your keyboard, plug it in and start feeling warmness</p>
-        </article>
-        <figure>
-            <img src="image/Custom_angles.png" alt="Angles gif">
-        </figure>
+        <section class="easySetup">
+            <article>
+                <h2>Easy Setup</h2>
+                <p>Place behind your keyboard, plug it in and start feeling warmness</p>
+            </article>
+            <figure>
+                <img src="image/Custom_angles.png" alt="Angles gif">
+            </figure>
         </section>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <section class="callToAction">
-        <h2>Read more about the product</h2>
-        <a href="productPage.php"><button>Envavo Heatbuff</button></a>
-    </section>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <section class="callToAction">
+            <h2>Read more about the product</h2>
+            <a href="productPage.php"><button>Envavo Heatbuff</button></a>
+        </section>
 
-    <?php 
-    include "includes/footer.inc.php";
-    ?>
-    <script src="js/script-Chris.js"></script>
-    <script src="js/landingpageScriptDanny.js"></script>
+        <?php 
+        include "includes/footer.inc.php";
+        ?>
+        <script src="js/script-Chris.js"></script>
+        <script src="js/landingpageScriptDanny.js"></script>
     </body>
 </html>
