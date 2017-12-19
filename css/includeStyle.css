@@ -3,12 +3,11 @@ html, body, div, h1, h2, nav, li, ul {
   padding: 0; }
 
 nav.mainNav {
-  background-color: grey;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.8); }
+  padding: 1em; }
   nav.mainNav ul {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 10fr  1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
     align-content: center; }
     nav.mainNav ul li {
       list-style-type: none;
@@ -17,7 +16,7 @@ nav.mainNav {
       font-family: "Open Sans", sans-serif; }
     nav.mainNav ul li a {
       text-decoration: none;
-      color: white; }
+      color: black; }
     nav.mainNav ul li a:hover {
       color: #ed652f; }
     nav.mainNav ul :nth-child(3) a {

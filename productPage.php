@@ -3,7 +3,7 @@
     include "includes/nav.inc.php";
 ?>
     <section class="videoSection">
-        <video src="movie/heatbuffMovie.mp4" type="video/mp4" controls>
+        <video src="movie/heatbuffMovie.mp4" type="video/mp4" controls autoplay>
     </section>
     <section class="productPageSection">
         <aside class="productImages slideshow-container">

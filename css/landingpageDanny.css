@@ -8,7 +8,7 @@ body, h1, h2, h3, h4, h5, figure {
 
 .solutionHereScroll {
   height: 2000px;
-  background-color: black; }
+  background-color: #252525; }
 
 .solutionHere {
   position: relative; }
@@ -91,7 +91,7 @@ body, h1, h2, h3, h4, h5, figure {
 
 .warmHands {
   height: 800px;
-  background-color: black;
+  background-color: #252525;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -104,7 +104,7 @@ body, h1, h2, h3, h4, h5, figure {
   .warmHands figure {
     /*visibility: hidden;*/
     justify-self: center;
-    justifty-self: end;
+    justify-self: end;
     align-self: center;
     /*visibility: hidden;
     img{
@@ -117,7 +117,9 @@ body, h1, h2, h3, h4, h5, figure {
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .customAngles figure {
-    align-self: center; }
+    text-align: center;
+    align-self: center;
+    justify-self: center; }
     .customAngles figure img {
       width: 80%; }
   .customAngles article {
@@ -127,7 +129,7 @@ body, h1, h2, h3, h4, h5, figure {
       font-size: 2.2em; }
 
 section.easySetup {
-  background-color: black;
+  background-color: #252525;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr; }
