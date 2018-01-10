@@ -16,6 +16,8 @@ body, h1, h2, h3, h4, h5, figure {
     position: absolute;
     top: 45%;
     left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
     .solutionHere aside h2 {
       font-size: 2.2em; }
@@ -52,14 +54,18 @@ body, h1, h2, h3, h4, h5, figure {
 
 @keyframes slideRight {
   0% {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%); }
   100% {
+    -webkit-transform: translateX(0%);
     transform: translateX(0%); } }
+
 @-webkit-keyframes slideRight {
   0% {
     -webkit-transform: translateX(-100%); }
   100% {
     -webkit-transform: translateX(0%); } }
+
 .slideLeft {
   animation-name: slideLeft;
   -webkit-animation-name: slideLeft;
@@ -71,22 +77,30 @@ body, h1, h2, h3, h4, h5, figure {
 
 @keyframes slideLeft {
   0% {
+    -webkit-transform: translateX(100%);
     transform: translateX(100%); }
   100% {
+    -webkit-transform: translateX(0%);
     transform: translateX(0%); } }
+
 @-webkit-keyframes slideLeft {
   0% {
     -webkit-transform: translateX(100%); }
   100% {
     -webkit-transform: translateX(0%); } }
+
 .fadeOut {
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility 0s linear 300ms, opacity 300ms;
+  -o-transition: visibility 0s linear 300ms, opacity 300ms;
   transition: visibility 0s linear 300ms, opacity 300ms; }
 
 .fadeIn {
   visibility: visible !important;
   opacity: 1;
+  -webkit-transition: visibility 0s linear 0s, opacity 300ms;
+  -o-transition: visibility 0s linear 0s, opacity 300ms;
   transition: visibility 0s linear 0s, opacity 300ms; }
 
 .warmHands {
@@ -100,14 +114,16 @@ body, h1, h2, h3, h4, h5, figure {
   .warmHands #warmHandsArticle {
     /*visibility: hidden;*/
     justify-self: center;
+    -ms-flex-item-align: center;
     align-self: center; }
   .warmHands figure {
     /*visibility: hidden;*/
     justify-self: center;
     justify-self: end;
+    -ms-flex-item-align: center;
     align-self: center;
     /*visibility: hidden;
-    img{
+        img{
         width:100%;
     }*/ }
 
@@ -118,12 +134,14 @@ body, h1, h2, h3, h4, h5, figure {
   grid-template-columns: 1fr 1fr; }
   .customAngles figure {
     text-align: center;
+    -ms-flex-item-align: center;
     align-self: center;
     justify-self: center; }
     .customAngles figure img {
       width: 80%; }
   .customAngles article {
     text-align: center;
+    -ms-flex-item-align: center;
     align-self: center; }
     .customAngles article h2 {
       font-size: 2.2em; }
@@ -135,10 +153,12 @@ section.easySetup {
   grid-template-columns: 1fr 1fr; }
   section.easySetup article {
     text-align: center;
+    -ms-flex-item-align: center;
     align-self: center; }
     section.easySetup article h2 {
       font-size: 2.2em; }
   section.easySetup figure {
+    -ms-flex-item-align: center;
     align-self: center; }
     section.easySetup figure img {
       width: 100%; }
@@ -154,8 +174,12 @@ section.easySetup {
     border: none;
     padding: 10px;
     font-size: 20px; }
+  .callToAction button:hover {
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    background-color: #000000;
+    cursor: pointer; }
 
 .gifStyling {
   width: 100%; }
-
-/*# sourceMappingURL=landingpageDanny.css.map */
