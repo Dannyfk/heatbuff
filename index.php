@@ -41,7 +41,7 @@
             <img class="solutionHereImage" src="image/hands_background.jpg" alt="Solution is here image">
             <aside id="solutionHereAside">
                 <h2>The solution is here</h2>
-                <p id="solutionHereText1">Unlike the other heaters, we use infrared waves technoligy</p>
+                <p id="solutionHereText1">Unlike the other heaters, we use infrared waves technology</p>
                 <p id="solutionHereText2">Heatbuff naturally increases your bloodflow fast and your body temperature is back to normal</p>
             </aside>
             <aside id="solutionHereAsideScroll">

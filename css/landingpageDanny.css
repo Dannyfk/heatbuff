@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, h5, figure {
   background-color: #e6bdbd; }
 
 .solutionHereScroll {
-  height: 2000px;
+  height: 1500px;
   background-color: #252525; }
 
 .solutionHere {
@@ -20,7 +20,9 @@ body, h1, h2, h3, h4, h5, figure {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
     .solutionHere aside h2 {
-      font-size: 2.2em; }
+      font-size: 2.5em; }
+    .solutionHere aside p {
+      font-size: 1.2em; }
     .solutionHere aside #solutionHereText1 {
       visibility: hidden; }
     .solutionHere aside #solutionHereText2 {
@@ -38,6 +40,10 @@ body, h1, h2, h3, h4, h5, figure {
   #solutionHereAsideScroll h2, #solutionHereAsideScroll p {
     visibility: inherit;
     color: white; }
+  #solutionHereAsideScroll h2 {
+    font-size: 2.5em; }
+  #solutionHereAsideScroll p {
+    font-size: 1.2em; }
 
 .fixedTop {
   position: fixed;
@@ -110,7 +116,9 @@ body, h1, h2, h3, h4, h5, figure {
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .warmHands h2 {
-    font-size: 2.2em; }
+    font-size: 2.5em; }
+  .warmHands p {
+    font-size: 1.2em; }
   .warmHands #warmHandsArticle {
     /*visibility: hidden;*/
     justify-self: center;
@@ -144,7 +152,9 @@ body, h1, h2, h3, h4, h5, figure {
     -ms-flex-item-align: center;
     align-self: center; }
     .customAngles article h2 {
-      font-size: 2.2em; }
+      font-size: 2.5em; }
+    .customAngles article p {
+      font-size: 1.2em; }
 
 section.easySetup {
   background-color: #252525;
@@ -156,12 +166,16 @@ section.easySetup {
     -ms-flex-item-align: center;
     align-self: center; }
     section.easySetup article h2 {
-      font-size: 2.2em; }
+      font-size: 2.5em; }
+    section.easySetup article p {
+      font-size: 1.2em; }
   section.easySetup figure {
     -ms-flex-item-align: center;
-    align-self: center; }
+    align-self: center;
+    height: 100%; }
     section.easySetup figure img {
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
 
 .callToAction {
   text-align: center;
@@ -178,7 +192,7 @@ section.easySetup {
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
     transition: 0.5s all;
-    background-color: #000000;
+    background-color: #252525;
     cursor: pointer; }
 
 .gifStyling {

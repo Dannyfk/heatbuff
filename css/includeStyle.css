@@ -8,9 +8,11 @@ nav.mainNav {
     display: grid;
     grid-template-columns: 10fr  1fr 1fr 1fr 1fr;
     grid-column-gap: 1em;
+    -ms-flex-line-pack: center;
     align-content: center; }
     nav.mainNav ul li {
       list-style-type: none;
+      -ms-flex-item-align: center;
       align-self: center;
       justify-self: center;
       font-family: "Open Sans", sans-serif; }
@@ -19,8 +21,6 @@ nav.mainNav {
       color: black; }
     nav.mainNav ul li a:hover {
       color: #ed652f; }
-    nav.mainNav ul :nth-child(3) a {
-      color: orange; }
     nav.mainNav ul :nth-child(3) a:hover {
       color: #ed652f; }
     nav.mainNav ul li.companyName {
@@ -41,5 +41,3 @@ footer {
   footer p {
     margin: 0;
     margin-bottom: 10px; }
-
-/*# sourceMappingURL=includeStyle.css.map */
